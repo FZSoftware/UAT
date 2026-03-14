@@ -4,7 +4,7 @@
   "description": "Men's Wear Billing Software with Barcode Scanner, GST Reports & Expense Tracker",
   "scripts": {
     "install:all": "cd server && npm install && cd ../client && npm install",
-    "start": "npm run start:server & npm run start:client",
+    "start": "node server/index.js",
     "client-build": "cd client && npm run build",
     "server": "node server/index.js"
   }
