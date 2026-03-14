@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold: #B8860B;
+  --gold-light: #D4A017;
+  --dark: #1a1a2e;
+  --darker: #0f0f1a;
+  --surface: #ffffff;
+  --surface2: #f8f6f0;
+  --surface3: #f0ede3;
+  --text: #1a1a2e;
+  --text2: #5a5a7a;
+  --text3: #9a9aaa;
+  --border: #e2ddd0;
+  --success: #2d6a4f;
+  --danger: #c1121f;
+  --accent-bg: #fdf6e3;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--surface2);
+  color: var(--text);
+  min-height: 100vh;
+}
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+/* ── Layout ── */
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+.header { background: var(--darker); color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--gold); }
+.header h1 { font-size: 20px; color: #fff; letter-spacing: 1px; }
+.header-sub { font-size: 11px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
+.nav { background: var(--dark); display: flex; gap: 2px; padding: 0 20px; flex-wrap: wrap; }
+.nav-btn { background: none; border: none; color: #aaa; padding: 10px 16px; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 13px; border-bottom: 2px solid transparent; transition: all .2s; white-space: nowrap; }
+.nav-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-btn:hover { color: #fff; }
+.main { flex: 1; padding: 24px; max-width: 1400px; margin: 0 auto; width: 100%; }
+
+/* ── Cards ── */
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+.card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 8px; }
+.card-title { font-size: 15px; font-weight: 500; color: var(--text); }
+
+/* ── Buttons ── */
+.btn { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; transition: all .15s; }
+.btn-gold { background: var(--gold); color: #fff; }
+.btn-gold:hover { background: var(--gold-light); }
+.btn-gold:disabled { opacity: .5; cursor: not-allowed; }
+.btn-outline { background: none; border: 1px solid var(--border); color: var(--text2); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.btn-danger { background: #fee2e2; color: var(--danger); border: 1px solid #fecaca; }
+.btn-success { background: #d1fae5; color: var(--success); border: 1px solid #a7f3d0; }
+.btn-sm { padding: 5px 10px; font-size: 12px; }
+
+/* ── Forms ── */
+.form-group { margin-bottom: 14px; }
+.form-label { display: block; font-size: 12px; font-weight: 500; color: var(--text2); margin-bottom: 5px; letter-spacing: .3px; text-transform: uppercase; }
+.form-input { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--text); background: var(--surface); transition: border .15s; }
+.form-input:focus { outline: none; border-color: var(--gold); }
+
+/* ── Grids ── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+/* ── Table ── */
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: var(--surface2); padding: 10px 12px; text-align: left; font-size: 11px; font-weight: 500; color: var(--text2); letter-spacing: .5px; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+td { padding: 10px 12px; border-bottom: 1px solid var(--surface2); color: var(--text); vertical-align: middle; }
+tr:hover td { background: var(--surface2); }
+
+/* ── Stats ── */
+.stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.stat-label { font-size: 11px; color: var(--text3); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; }
+.stat-value { font-size: 24px; font-family: 'Playfair Display', serif; font-weight: 600; color: var(--text); }
+.stat-sub { font-size: 11px; color: var(--text2); margin-top: 4px; }
+.stat-accent { border-left: 3px solid var(--gold); }
+
+/* ── Badges / Tags ── */
+.badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+.badge-paid { background: #d1fae5; color: #065f46; }
+.badge-pending { background: #fef3c7; color: #92400e; }
+.badge-cancelled { background: #fee2e2; color: #991b1b; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; background: var(--surface3); color: var(--text2); }
+
+/* ── Logo ── */
+.logo-icon { width: 36px; height: 36px; background: var(--gold); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-icon span { font-family: 'Playfair Display', serif; color: #fff; font-size: 16px; font-weight: 600; }
+
+/* ── Product picker grid ── */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 10px; }
+.product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px; cursor: pointer; transition: all .15s; text-align: center; }
+.product-card:hover { border-color: var(--gold); box-shadow: 0 2px 8px rgba(184,134,11,.15); }
+.product-cat { font-size: 10px; color: var(--text3); text-transform: uppercase; margin-bottom: 3px; }
+.product-name { font-size: 12px; font-weight: 500; color: var(--text); margin-bottom: 3px; }
+.product-price { font-size: 14px; font-weight: 600; color: var(--gold); }
+
+/* ── Billing layout ── */
+.billing-layout { display: grid; grid-template-columns: 1fr 370px; gap: 16px; align-items: start; }
+.section-title { font-size: 18px; margin-bottom: 16px; color: var(--text); }
+.scroll-area { max-height: 300px; overflow-y: auto; }
+
+/* ── Bill print preview ── */
+.bill-preview { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; font-size: 13px; }
+.bill-header { text-align: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 2px solid var(--darker); }
+.bill-shop-name { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 600; color: var(--darker); letter-spacing: 1px; }
+.bill-divider { border: none; border-top: 1px dashed var(--border); margin: 10px 0; }
+.bill-row { display: flex; justify-content: space-between; padding: 3px 0; font-size: 13px; }
+.bill-total-row { display: flex; justify-content: space-between; padding: 6px 0; font-weight: 600; font-size: 15px; border-top: 2px solid var(--darker); margin-top: 8px; }
+
+/* ── Scanner ── */
+.scanner-box { border: 2px dashed var(--gold); border-radius: 10px; padding: 20px; text-align: center; background: var(--accent-bg); margin-bottom: 12px; }
+.scanner-input { font-size: 18px; letter-spacing: 4px; text-align: center; }
+.scan-line { display: block; width: 180px; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), transparent); animation: scanline 1.5s ease-in-out infinite; margin: 0 auto 10px; }
+@keyframes scanline { 0%, 100% { transform: translateX(-60px); opacity: .5; } 50% { transform: translateX(60px); opacity: 1; } }
+
+/* ── GST bands ── */
+.gst-band { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 8px; background: var(--surface2); margin-bottom: 8px; border-left: 4px solid var(--gold); }
+.gst-rate { font-size: 22px; font-family: 'Playfair Display', serif; font-weight: 600; color: var(--gold); min-width: 46px; }
+
+/* ── Expense category badges ── */
+.exp-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+.exp-rent        { background: #ede9fe; color: #5b21b6; }
+.exp-salary      { background: #dbeafe; color: #1e40af; }
+.exp-utilities   { background: #fef3c7; color: #92400e; }
+.exp-stock       { background: #d1fae5; color: #065f46; }
+.exp-maintenance { background: #fee2e2; color: #991b1b; }
+.exp-other       { background: #f3f4f6; color: #374151; }
+
+/* ── Misc ── */
+.loading { text-align: center; padding: 48px; color: var(--text3); font-size: 14px; }
+.empty-state { text-align: center; padding: 32px; color: var(--text3); }
+
+@media (max-width: 960px) { .billing-layout { grid-template-columns: 1fr; } .grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } .grid-4 { grid-template-columns: 1fr; } }
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+  .bill-preview { box-shadow: none; border: none; }
+}

@@ -1,0 +1,178 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Cotton Formal Shirt",
+      "category": "Shirts",
+      "price": 550,
+      "gst": 5,
+      "stock": 44,
+      "barcode": "8901234560001"
+    },
+    {
+      "id": 2,
+      "name": "Slim Fit Chinos",
+      "category": "Trousers",
+      "price": 600,
+      "gst": 5,
+      "stock": 29,
+      "barcode": "8901234560002"
+    },
+    {
+      "id": 3,
+      "name": "Linen Kurta",
+      "category": "Ethnic",
+      "price": 600,
+      "gst": 5,
+      "stock": 22,
+      "barcode": "8901234560003"
+    },
+    {
+      "id": 4,
+      "name": "Crew Neck T-Shirt",
+      "category": "Casual",
+      "price": 350,
+      "gst": 5,
+      "stock": 60,
+      "barcode": "8901234560004"
+    },
+    {
+      "id": 5,
+      "name": "Denim Jeans (Straight)",
+      "category": "Trousers",
+      "price": 900,
+      "gst": 12,
+      "stock": 18,
+      "barcode": "8901234560005"
+    },
+    {
+      "id": 6,
+      "name": "Polo T-Shirt",
+      "category": "Casual",
+      "price": 649,
+      "gst": 5,
+      "stock": 40,
+      "barcode": "8901234560006"
+    },
+    {
+      "id": 7,
+      "name": "Polo Fit pant",
+      "category": "Formals",
+      "price": 650,
+      "gst": 12,
+      "stock": 90,
+      "barcode": "8901234560007"
+    },
+    {
+      "id": 8,
+      "name": "Dhoti (White)",
+      "category": "Ethnic",
+      "price": 399,
+      "gst": 5,
+      "stock": 35,
+      "barcode": "8901234560008"
+    },
+    {
+      "id": 9,
+      "name": "Veshti Set",
+      "category": "Ethnic",
+      "price": 1199,
+      "gst": 5,
+      "stock": 15,
+      "barcode": "8901234560009"
+    },
+    {
+      "id": 10,
+      "name": "Leather Belt",
+      "category": "Accessories",
+      "price": 699,
+      "gst": 18,
+      "stock": 25,
+      "barcode": "8901234560010"
+    },
+    {
+      "id": 11,
+      "name": "Formal Trousers",
+      "category": "Formals",
+      "price": 1599,
+      "gst": 5,
+      "stock": 20,
+      "barcode": "8901234560011"
+    },
+    {
+      "id": 12,
+      "name": "Sports Track Pant",
+      "category": "Casual",
+      "price": 350,
+      "gst": 12,
+      "stock": 27,
+      "barcode": "8901234560012"
+    },
+    {
+      "id": 12,
+      "name": "NS Shorts",
+      "category": "Casual",
+      "price": 230,
+      "gst": 12,
+      "stock": 27,
+      "barcode": "8901234560013"
+    },
+    {
+      "id": 12,
+      "name": "Boxer Shorts",
+      "category": "Casual",
+      "price": 166.6,
+      "gst": 12,
+      "stock": 27,
+      "barcode": "8901234560014"
+    },
+    {
+      "id": 12,
+      "name": "Casual Shirt",
+      "category": "Casual",
+      "price": 650,
+      "gst": 12,
+      "stock": 27,
+      "barcode": "8901234560012"
+    }
+  ],
+  "customers": [],
+  "invoices": [
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "date": "2025-03-01",
+      "category": "Rent",
+      "description": "March shop rent",
+      "amount": 25000
+    },
+    {
+      "id": 2,
+      "date": "2025-03-05",
+      "category": "Salary",
+      "description": "Staff salary - March",
+      "amount": 18000
+    },
+    {
+      "id": 3,
+      "date": "2025-03-08",
+      "category": "Utilities",
+      "description": "Electricity bill",
+      "amount": 3200
+    },
+    {
+      "id": 4,
+      "date": "2025-03-12",
+      "category": "Stock Purchase",
+      "description": "Bulk shirt restock",
+      "amount": 45000
+    }
+  ],
+  "nextIds": {
+    "product": 13,
+    "customer": 4,
+    "invoice": 5,
+    "expense": 7
+  }
+}
