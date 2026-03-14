@@ -45,7 +45,7 @@ export default function GSTPage() {
     const lines = [
       `GSTR-3B SUMMARY — ${period}`,
       `Generated: ${new Date().toLocaleString()}`,
-      `Shop: RAJA MEN'S WEAR | GSTIN: 33AABCU9603R1ZX`,
+      `Shop: FRIENDS ZONE MEN'S WEAR | GSTIN: 33AABCU9603R1ZX`,
       '',
       'GST SLAB BREAKDOWN',
       'Rate,Taxable Value,CGST,SGST,Total GST',
