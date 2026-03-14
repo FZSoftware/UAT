@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const DB_FILE = path.join(__dirname, 'db.json');
 
 app.use(cors());
@@ -218,6 +218,12 @@ app.get('/api/stats', (req, res) => {
     productCount: db.products.length,
     avgOrder: paid.length ? revenue / paid.length : 0
   });
+});
+
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 app.listen(PORT, () => {
