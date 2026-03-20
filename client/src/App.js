@@ -87,7 +87,7 @@ export default function App() {
     <div className="app">
       <div className="header">
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div className="logo-icon"><span>R</span></div>
+          <div className="logo-icon"><span>FZ</span></div>
           <div>
             <h1>{SHOP.name}</h1>
             <div className="header-sub">Billing &amp; Inventory v2</div>
